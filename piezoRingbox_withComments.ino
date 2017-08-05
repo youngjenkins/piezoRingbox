@@ -1,7 +1,6 @@
 /*
   Turns on LEDs & Buzzers when either of
-  two switches, connected from pin #0 to GND,
-  get pressed.
+  two switches get pressed.
 
   To upload to Trinket:
   1) Have the sketch open in Arduino IDE,

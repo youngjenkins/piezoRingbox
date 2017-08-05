@@ -1,7 +1,6 @@
 /*
   Turns on LEDs & Buzzers when either of
-  two switches, connected from pin #0 to GND,
-  get pressed.
+  two switches get pressed.
 
   July 2017
 */
