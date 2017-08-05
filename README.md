@@ -26,7 +26,7 @@ https://forums.adafruit.com/viewtopic.php?f=52&t=89990&p=453219&hilit=tone+ardui
 
 
 
-To adapt beep() to play a series of frequencies at differing durations, I used two arrays passed to beep() via a For loop. One array holds the frequences of the notes to be played, the other holds the durations in milliseconds. 
+To adapt beep() to play a series of frequencies at differing durations, I used two arrays passed to beep() via a For loop. One array holds the frequences (in Hertz) of the notes to be played, the other holds the durations in milliseconds. 
 
 For music sources, I looked at old RTTTL ringtone files, and translated them into sets of frequencies / durations. For funsies, I started writing a python translation program to automate this tedious process. Will post that when it's ready.
 Reference & External link to RTTTL files: https://en.wikipedia.org/wiki/Ring_Tone_Transfer_Language
@@ -34,5 +34,14 @@ Reference & External link to RTTTL files: https://en.wikipedia.org/wiki/Ring_Ton
 So now, when one of the buttons at either phone gets pressed, the buzzers on both ends play out a song to signal that there's someone who wants to talk to you on the phone!
 
 The code is built around using just one or two songs for the moment, because that suited the project's needs. If I get the python RTTTL translator going, I'd like to modify this code to be able to use any song data passed in to it.
+
+
+---------------------------------
+Files:
+---------------------------------
+ - musicNoteFreq_RTTTLrange.txt : a list of frequencies of notes in the RTTTL octave range, rounded to integers
+ - buzzerCircuit.png : a schematic of the circuit (ringboxes only, the telephones are separate)
+ - piezoRingbox.ino : the arduino / trinket code file
+ - piezoRingbox_withComments.ino : a heavily-commented version, for when I come back to this and have forgotten everything about it.
 
 *Lo-Fi FTW*
