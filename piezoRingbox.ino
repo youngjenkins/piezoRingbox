@@ -54,7 +54,7 @@ void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMillisecon
 void beepSong(char buzzPin){
 	int arrayLengths = 32;
 
-		/frequencies
+		//frequencies
 	int fq[] = {1319, 1480, 1661, 1760, 1661, 1480, 1319, 1661,
 	 1480, 1319, 1175, 1480, 1319, 1175, 1109, 1319, 0, 1109, 988,
 	 880, 988, 1109, 1175, 988, 1109, 1175, 0, 1319, 1319, 1480,
